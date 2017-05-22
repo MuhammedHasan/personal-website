@@ -1,3 +1,41 @@
-<h1>
-  {{title}}
-</h1>
+<div fxLayout="row" fxLayout.xs="column">
+  <div fxFlex="250px" fxFlex.xs="450px" id="profile" fxLayoutAlign="start center" fxLayout="column">
+    <img src="assets/img/profile.jpg" alt="" class="circle z-depth-3">
+    <p> Muhammmed Hasan Çelik</p>
+    <div fxLayout="row">
+      <a href="https://twitter.com/muhammed_hasan" target="_blank">
+        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/muhammedhasancelik" target="_blank">
+        <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+      </a>
+      <a href="http://biodb.sehir.edu.tr/Home/Profile/fade72da-4087-4adb-8a2f-5dbf83cb892c" target="_blank">
+        <i class="fa fa-tree fa-2x" aria-hidden="true"></i>
+      </a>
+      <a href="https://github.com/MuhammedHasan" target="_blank">
+        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div fxLayoutAlign="start center">
+      <a href="mailto:hasancelik@std.sehir.edu.tr" class="email">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <span>hasancelik@std.sehir.edu.tr</span>
+      </a>
+    </div>
+    <div id="menu">
+      <md-toolbar color="accent" fxLayout="column">
+        <a fxFlex md-button [routerLink]="['home']">
+          <md-icon>home</md-icon>
+          <span>Home</span>
+        </a>
+        <a fxFlex md-button [routerLink]="['blog']">
+          <md-icon>description</md-icon>
+          <span>Blog</span>
+        </a>
+      </md-toolbar>
+    </div>
+  </div>
+  <div fxFlex id="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

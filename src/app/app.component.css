@@ -1,0 +1,30 @@
+#profile {
+  background-color: #212121;
+  color: #E8F5E9;
+  height: 100vh;
+}
+
+#profile>p {
+  font-size: 18px;
+}
+
+#profile img {
+  margin-top: 30px;
+  width: 150px;
+}
+
+.fa {
+  margin: 5px;
+}
+
+#menu {
+  margin-top: 30px;
+}
+
+#content {
+  padding: 30px;
+}
+
+i, .email {
+  color: #E8F5E9;
+}
