@@ -1,0 +1,7 @@
+<md-card fxFlex="1000px">    
+  <md-card-content>
+    <markdown path="/assets/posts/doc.md"></markdown>
+  </md-card-content>
+</md-card>
+
+
